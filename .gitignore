@@ -1,0 +1,11 @@
+.DS_Store
+.vscode
+node_modules/.DS_Store
+node_modules/
+
+03*/homework/solution.js
+04*/homework/bottles-solution.js
+05*/homework/solution
+07*/starter/*solution*.js
+09*/homework/**/*/pixart_solution.js
+10*/solution-code
