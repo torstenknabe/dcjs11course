@@ -539,6 +539,22 @@ for (let i = 2; i < teams.length; i++) {
 }
 ```
 
+We can also use a `for in` loop, which is generally easier. 
+```js
+let teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
+for (team in teams){
+  console.log(team)
+}
+```
+What happens when we execute this? We should get numbers instead of the team names. How can we fix that?
+
+```js
+let teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
+for (team in teams){
+  console.log(teams[team])
+}
+```
+
 JavaScript arrays have several advanced _iterator methods_.
 
 Many of these methods require a function to be supplied as an argument, and the code in which you write the function will be applied to _each_ item in the array, individually.
@@ -575,7 +591,7 @@ Here are some other iterator methods for you to research and practice with:
 
 #### Part 1: Evens and Odds
 
-Open the `exercises/arrays.js` file in your editor. In your terminal, make sure you are in the `02-data_and_operators/exercise` directory. Execute the `arrays.js` file in your terminal:
+Open the `exercises/arrays.js` file in your editor. In your terminal, make sure you are in the `03-data_and_operators/exercise` directory. Execute the `arrays.js` file in your terminal:
 
 ```bash
 $ node arrays.js

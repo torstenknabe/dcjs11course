@@ -12,6 +12,7 @@ cd ~/Sites
 mkdir jsdc11
 cd jsdc11
 git clone git@git.generalassemb.ly:<username>/course-materials.git
+cd course-materials
 ```
 
 ### Add the original Course Materials repo as an upstream remote

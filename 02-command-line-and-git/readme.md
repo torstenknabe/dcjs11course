@@ -35,15 +35,15 @@ We learned how to execute some scripts on the command line during Installfest. Y
 
 Here are some important UNIX commands to know as you're working on the terminal.
 
-| Command | Description | Command| Description |
-| --- | --- | --- | --- |
-| `ls` | **L**i**s**t the contents of the directory | `code` | Open VS Code|
-| `cd` | **C**hange **d**irectories| `pwd`| **P**rint **w**orking **d**irectory |
-| `mkdir` | **M**a**k**e **dir**ectory | `say`| Make your computer talk |
-| `rmdir` | **R**e**m**ove empty **dir**ectories  | `open`| Open a particular file in their default application|
-| `rm` | **R**e**m**ove files or directories | `./`  | The current folder|
-| `touch` | Create an empty file | `../`| One folder above your current working directory
-| `echo` | Return a string |  `~/` | The home folder  |
+| Command | Description                                | Command | Description                                         |
+| ------- | ------------------------------------------ | ------- | --------------------------------------------------- |
+| `ls`    | **L**i**s**t the contents of the directory | `code`  | Open VS Code                                        |
+| `cd`    | **C**hange **d**irectories                 | `pwd`   | **P**rint **w**orking **d**irectory                 |
+| `mkdir` | **M**a**k**e **dir**ectory                 | `say`   | Make your computer talk                             |
+| `rmdir` | **R**e**m**ove empty **dir**ectories       | `open`  | Open a particular file in their default application |
+| `rm`    | **R**e**m**ove files or directories        | `./`    | The current folder                                  |
+| `touch` | Create an empty file                       | `../`   | One folder above your current working directory     |
+| `echo`  | Return a string                            | `~/`    | The home folder                                     |
 
 #### Command Line Codealong
 
@@ -117,7 +117,7 @@ Complete the following instructions below in the Terminal application.
 $ code .
 ```
 
-If that doesn't work, open your editory and navigate to File -> Open in the menu.
+If that doesn't work, open your editor and navigate to File -> Open in the menu.
 
 In the `about.html` file, paste the following:
 
