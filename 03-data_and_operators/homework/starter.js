@@ -15,6 +15,8 @@
 
 // Your code here
 
+let q1 = ["image1.png", "image2.png", "image3.png"];
+
 /**
  * Question 2
  * Using the array from Question 1, store the first element of the array
@@ -22,6 +24,7 @@
  */
 
 // Your code here
+let q2 = q1[0];
 
 /**
  * Question 3
@@ -30,6 +33,8 @@
  */
 
 // Your code here
+const q3 = q1.length;
+// I used const here because I am using this variable in q4 and didn't want the variable contents to be changed if something else were also to use that variable
 
 /**
  * Question 4
@@ -38,6 +43,7 @@
  */
 
 // Your code here
+let q4 = q1[q3 - 1];
 
 // ____________________________________________________________________________
 
@@ -55,6 +61,26 @@
  */
 
 // Your code here
+let q5 = [1, 2, 3, 4];
+
+// Solution using for loop
+
+let q5For = []; // Set a variable to an empty array
+for (el in q5) {
+  // set up the for loop
+  q5For.push(q5[el]++); // add each item to the empty array using push by looking up each position and adding one
+}
+
+// Solution using forEach
+
+let q5ForEach = []; // Set a variable to an empty array
+q5.forEach(function(el) {
+  // Set up the forEach loop
+  q5ForEach.push(el++); // set the empty array equal to one more using push to add it in
+});
+
+// Solution using map() method
+const q5Map = q5.map(x => x++);
 
 /**
  * Question 6
@@ -62,4 +88,29 @@
  * (average = sum of all numbers/number of numbers). Store the average in q6.
  */
 
+/*
+ * Written algorithm
+ * Make q6Sum as a variable
+ * run a for loop through q5 and each time add the value of each position to a variable called q6Sum
+ * average is q6 = sum / q5.length
+ */
+
+let q6Sum = 0; // Defines variable
+q5.forEach(function(el) {
+  // starts a forEach loop to run through the q5 array
+  q6Sum = q6Sum + el; // increments through the array adding the value of each position to q6Sum
+});
+
+let q6 = q6Sum / q5.length; // Uses the sum found via the for loop to find the average by dividing the sum total by the number of numbers or length
+
 // Your code here
+// Print statements for each question
+console.log(q1);
+console.log(q2);
+console.log(q3);
+console.log(q4);
+console.log(q5);
+console.log(q5For);
+console.log(q5ForEach);
+console.log(q5Map);
+console.log(q6);
