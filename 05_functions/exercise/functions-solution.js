@@ -48,7 +48,6 @@ printToppings(['peps', 'shrooms', 'cheese'])
 // Write a function that adds the first three numbers of an array to the average of the remaining numbers in the array.
 // Use destructuring and the rest operator.
 
-
 const weirdFunction = numbers => {
   const [one, two, three, ...rest] = numbers
 

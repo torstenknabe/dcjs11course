@@ -10,4 +10,4 @@
 // Write a function that adds the first three numbers of an array to the average of the remaining numbers in the array.
 // Use destructuring and the rest operator.
 
-const numbers = [1,2,3,4,5,6]
+const numbers = [1, 2, 3, 4, 5, 6]
