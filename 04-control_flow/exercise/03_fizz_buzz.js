@@ -1,4 +1,3 @@
-
 // Relying on your newfound knowledge of loops, combine loops and if/else statements together and incrementally build the common fizzbuzz loop.
 
 // - In the loop, every time a number is divisible by **3**, instead of logging the number itself, the word "fizz" should appear.
@@ -18,3 +17,27 @@
 
 // ##### Step 4:
 // Add an additional `else if` clause that logs the string `"fizzbuzz"` if the value being iterated over is divisible by both `3` and `5`.
+
+for (let numbers = 1; numbers <= 100; numbers++) {
+  if (numbers % 5 === 0 && numbers % 3 === 0) {
+    console.log("fizzbuzz")
+  } else if (numbers % 5 === 0) {
+    console.log("buzz")
+  } else if (numbers % 3 === 0) {
+    console.log("fizz")
+  } else {
+    console.log(numbers)
+  }
+}
+
+/*
+if (i % 5 === 0 && i % 3 === 0) {
+  console.log("fizzbuzz")
+} else if (i % 5 === 0) {
+  console.log("buzz")
+} else if (i % 3 === 0) {
+  console.log("fizz")
+} else {
+  console.log(i)
+}
+*/
