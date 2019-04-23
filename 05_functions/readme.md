@@ -164,7 +164,7 @@ Parameters remedy this problem by allowing us to call, or invoke, the same funct
 
 ```javascript
 function sayHello (name) {
-  console.log('Hello ' + name);
+  console.log(`Hello ${name}`);
 }
 
 sayHello('Mark');
