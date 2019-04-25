@@ -12,10 +12,25 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 
 */
 
-const button = document.getElementById('roll-dice')
-const die1 = document.getElementById('first-die')
-const die2 = document.getElementById('second-die')
+function generateRandomNumber(max) {
+  return Math.ceil(Math.random() * max)
+}
 
-button.addEventListener('click', updateDice)
-die2.addEventListener('click', updateDice)
-die1.addEventListener('click', updateDice)
+const updateDice = () => {
+  let random1 = generateRandomNumber(6)
+  let random2 = generateRandomNumber(6)
+
+  console.log(die1)
+  console.log(die2)
+
+  die1.classList = `die1-${random1}`
+  die2.classList = `die2-${random2}`
+}
+
+const button = document.getElementById("roll-dice")
+const die1 = document.getElementById("first-die")
+const die2 = document.getElementById("second-die")
+
+button.addEventListener("click", updateDice)
+die2.addEventListener("click", updateDice)
+die1.addEventListener("click", updateDice)
