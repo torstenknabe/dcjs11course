@@ -512,4 +512,3 @@ Make sure the lesson objectives have been met.
 
 * Summarize the difference between global and local scope.
 * Explain how you define and call functions using arguments.
-* How does Hubot work?

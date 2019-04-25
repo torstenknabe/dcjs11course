@@ -13,10 +13,10 @@ How cool is that?
 
 Write a loop that will print out our JSON data as a string, in the following format:
 
-Quick-E-Mart's Current Stock
+Quick E Mart's Current Stock
 Item, Color, Price
-Aubergine, Purple, 1.59
-Apple, Red, 0.78
-Nuts, Brown, 2.23
+aubergine, purple, 1.59
+apple, red, 0.78
+nuts, brown, 2.23
 
 */

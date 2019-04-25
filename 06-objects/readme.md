@@ -85,9 +85,6 @@ There are two ways to create objects:
     owners: ["Tedi", "Ena"]
   }
 ```
-
->Its pretty rare to see the constructed syntax being used. Most of the time, stick to using the literal syntax.
-
 We can get and set object properties with either dot notation or square brackets and parenthesis.
 
 #### Setting properties
@@ -190,9 +187,7 @@ let myObject = {
 anotherArray.push( anotherObject, myObject );
 ```
 
-If we shallow-copy `myObject`, the new object's properties of `b`, `c`, and `d` would all still just be references to the original objects. If we deep-copy `myObject`, then new objects for `someObject`, `someArray` will also be created. But this is a problem because `someArray` has references to `someObject` and `myObject` now, so those would also have to be duplicated. Now we have an infinite circular duplication problem.
-
-To shallow-copy an object, we can use `Object.assign()`, like so:
+If we shallow-copy `myObject`, the new object's properties of `b`, `c`, and `d` would all still just be references to the original objects. To shallow-copy an object, we can use `Object.assign()`, like so:
 
 ```js
 let newOjb = Object.assign({}, myObject)
