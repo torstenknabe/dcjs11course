@@ -21,15 +21,42 @@ time. Nor are players allowed to look at the cards in their deck.
 A winner of the game is declared when they have all 52 cards in their deck and
 the other player has none.
 
-## Minimum requirements
-Your game should start by running `node index.js` from the command line. 
-Your program should print something to the console at each round, showing the
-current round, which cards each player drew, who is the winner and how many
-cards each player has left. If it is a tie, then you should print "War!" to the
-console before drawing more cards from each player.
+## Instructions
 
-At the end of each round, the player should be prompted to play the next round.
-Use [Prompt](https://www.npmjs.com/package/prompt-sync) to implement. 
+First, we'll need to install a dependency using `npm`. From the `course-materials` directory, do the following: 
+
+```bash
+cd 07-lab/starter
+npm install
+```
+
+This will install the `prompt` package from NPM, which we'll discuss in a second. 
+
+
+There is some starter code in this file. We'll walk through it together. You'll see there is a `createDeck` function that returns a shuffled array of objects, which represent a deck of cards. Each card has a name (like King of Hearts) and a card value (2 through 14, Ace is high). 
+
+Your goal is to write a function that plays a game of war. The function should
+
+ - create a new deck of cards
+ - deal those cards to a Player and  a Computer
+ - track the number of each round played 
+ - play a round of war while both players have cards in their hands. 
+ 
+- For each round you should: 
+   - console log the current round
+   - console log the players card and the computers card
+   - compare the cards values. Add both cards to the bottom of the winner's hands. If the card values are the same, declare war.
+   - console log the winner of each round
+   - console log the players remaining cards
+   - console log the computers remaining cards
+   - at the end of each round, ask the player if they want to play another round. Use [Prompt](https://www.npmjs.com/package/prompt-sync) to implement. 
+
+### Declaring War
+
+War is declared if both the player and the computer flip over the same valued card. The rules of war dicated that each player draws three cards, puts them face down on the table, then draws a fourth card. Each player compares the fourth card's value to determine the winner. The winner takes all. There are several things to consider when war is declared: 
+
+- If either of the players has less than 4 cards, they draw all of their remaining cards and the last card available is the card used to compare. 
+- Its possible to have another tie when declaring war. This means that `declareWar` should probably be a function, and it will be a `recursive` function, which is a function  
 
 ## Getting Unstuck
 If you get stuck, first retrace your steps. I highly recommend using
@@ -49,23 +76,4 @@ problem you're stuck on.
 If you're still stuck after all of that, check with your neighbor. Maybe they
 can help you think through the bug or problem?
 
-After that, raise your hand and Sean or Ramsay will come over to help you.
-
-## Bonus Level 1
-Use one or more npm packages to make your command line interface more user
-friendly. Be creative! The sky is the limit. Here are some suggested packages.
-Implement one or two.
-
-- [Colors](https://www.npmjs.com/package/colors)
-- [Chalk](https://www.npmjs.com/package/chalk)
-- [Clear](https://www.npmjs.com/package/clear)
-- [Figlet](https://www.npmjs.com/package/figlet)
-- [Clui](https://www.npmjs.com/package/clui) *More advanced*
-
-## Bonus Level 2
-Use `object oriented programming`, modeling Cards, Decks, and Players. Your
-file should be broken up into multiple files, grouping your code by
-functionality and purpose.
-
-## Bonus Level 3
-Use `functional programming`, making it so all your functions are pure (have no side effects)
+As always, you can raise your hand and someone will get you unstuck. 
