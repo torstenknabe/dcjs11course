@@ -1,15 +1,12 @@
-// let sum = 0
-// const arr = [1, 2, 3]
+let scores = [10, 20, 30]
 
-// for (let i = 0; i < arr.length; i++) { // ?
-//   sum += arr[i] // ?
-// }
-
-// let average = sum / arr.length
-
-// console.log(average)
-
-let speak = words => {
-  console.log(words)
+const loopThroughScores = function(score) {
+  console.log(score)
 }
-speak()
+
+// same thing but in ES6
+const loopThroughScores2 = score => {
+  console.log(score)
+}
+
+scores.forEach(loopThroughScores)

@@ -18,3 +18,20 @@ let ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'ni
 
 // Write a function called getRandomCard that will return one random
 // card from deckOfCards whenever it is called.
+
+// createDeck function
+
+function createDeck (suitsArr, ranksArr) {
+    let comboDeck = []
+    
+}
+
+suits.forEach(function(suits[0], 1, suits) {
+    ranks.forEach(function(ranks[0], 1, ranks) {
+
+    });
+});
+
+// function getRandomCard () => {
+//     return deckOfCards[Math.ceil(Math.random() * deckOfCards.length)]
+// }

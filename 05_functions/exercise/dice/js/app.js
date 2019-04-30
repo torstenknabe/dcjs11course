@@ -20,11 +20,8 @@ const updateDice = () => {
   let random1 = generateRandomNumber(6)
   let random2 = generateRandomNumber(6)
 
-  console.log(die1)
-  console.log(die2)
-
-  die1.classList = `die1-${random1}`
-  die2.classList = `die2-${random2}`
+  die1.classList = `dice-${random1}`
+  die2.classList = `dice-${random2}`
 }
 
 const button = document.getElementById("roll-dice")
