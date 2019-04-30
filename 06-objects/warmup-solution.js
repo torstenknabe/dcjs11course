@@ -9,13 +9,13 @@ function generateRandomNumber (max) {
   return Math.ceil(Math.random() * max)
 }
 
-function getAverage (numberOfRandoms, maxRandomNumber) {
+function getAverage (numberOfRandoms) {
   let sum = 0
-  for (let i = 0; i < numberOfRandoms; i++) {
-    sum += generateRandomNumber(maxRandomNumber)
+  for (let i = 1; i <= numberOfRandoms; i++) {
+    sum += generateRandomNumber(numberOfRandoms)
   }
 
   return sum / numberOfRandoms
 }
 
-getAverage(10, 10) // ?
+getAverage(10) // ?
