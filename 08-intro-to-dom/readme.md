@@ -53,7 +53,7 @@ We can manipulate the DOM in 3 different ways:
 ```html
   <body onload="window.alert('welcome to my app!');">
 ```
-2. Include script tags in our HTML documents. This technique is used primarily when generating content/properties through a back-end language. Try to avoid this if not necessary.
+2. Include script tags in our HTML documents. This technique is used primarily when generating content/properties through a back-end language. Try to avoid this if necessary.
 ```html
   <html>
     <head>
@@ -65,7 +65,19 @@ We can manipulate the DOM in 3 different ways:
     </body>
   </html>
 ```
-3. Including the JavaScript file [at the footer] of our site/app.
+3. Including the JavaScript file as a `<script src="path/to/file" type="text/javascript"` tag with a source, somewhere in the HTML document.
+
+```html
+<html>
+<head>
+  <title>ScratchPad</title>
+</head>
+<body>
+  <h1>ScratchPad!</h1>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
+```
 
 **It is important to get used to falling in the habit of only doing DOM related manipulation only once our content has loaded.** This is required, as we can't manipulate something that has not yet been drawn in the browser. In plain JavaScript, we can usually wrap this in a 'window.onload' function.
 
